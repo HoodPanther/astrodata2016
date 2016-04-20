@@ -1,0 +1,279 @@
+VIII/95             Herschel Multi-tiered Extragalactic Survey   (Oliver+, 2012)
+================================================================================
+The Herschel Multi-tiered Extragalactic Survey: HerMES.
+     Oliver S.J., Bock J., Altieri B., Amblard A., Arumugam V., Aussel H.,
+     Babbedge T., Beelen A., Bethermin M., Blain A., Boselli A., Bridge C.,
+     Brisbin D., Buat V., Burgarella D., Castro-Rodriguez N., Cava A.,
+     Chanial P., Cirasuolo M., Clements D.L., Conley A., Conversi L., Cooray A.,
+     Dowell C.D., Dubois E.N., Dwek E., Dye S., Eales S., Elbaz D., Farrah D.,
+     Feltre A., Ferrero P., Fiolet N., Fox M., Franceschini A., Gear W.,
+     Giovannoli E., Glenn J., Gong Y., Gonzalez Solares E.A., Griffin M.,
+     Halpern M., Harwit M., Hatziminaoglou E., Heinis S., Hurley P., Hwang H.S.,
+     Hyde A., Ibar E., Ilbert O., Isaak K., Ivison R.J., Lagache G.,
+     Le Floc'h E., Levenson L., Faro B.L., Lu N., Madden S., Maffei B.,
+     Magdis G., Mainetti G., Marchetti L., Marsden G., Marshall J.,
+     Mortier A.M.J., Nguyen H.T., O'Halloran B., Omont A., Page M.J.,
+     Panuzzo P., Papageorgiou A., Patel H., Pearson C.P., Perez-Fournon I.,
+     Pohlen M., Rawlings J.I., Raymond G., Rigopoulou D., Riguccini L.,
+     Rizzo D., Rodighiero G., Roseboom I.G., Rowan-Robinson M.,
+     Sanchez Portal M., Schulz B., Scott D., Seymour N., Shupe D.L.,
+     Smith A.J., Stevens J.A., Symeonidis M., Trichas M., Tugwell K.E.,
+     Vaccari M., Valtchanov I., Vieira J.D., Viero M., Vigroux L., Wang L.,
+     Ward R., Wardlow J., Wright G., Xu C.K., Zemcov M.
+    <Mon. Not. R. Astron. Soc. 424, 1614-1635 (2012)>
+    =2012MNRAS.424.1614O
+    +2012MNRAS.419..377S
+    =2014yCat.8095....0O
+================================================================================
+ADC_Keywords: Surveys ; Galaxies, IR ; Photometry, millimetric/submm
+Mission_Name: Herschel
+Keywords: surveys - galaxies: evolution - infrared: galaxies -
+          submillimetre: galaxies
+
+Abstract:
+    The Herschel Multi-tiered Extragalactic Survey (HerMES) is a legacy
+    programme designed to map a set of nested fields totalling ~380deg^2^.
+    Fields range in size from 0.01 to ~20deg^2^, using the
+    Herschel-Spectral and Photometric Imaging Receiver (SPIRE) (at 250,
+    350 and 500um) and the Herschel-Photodetector Array Camera and
+    Spectrometer (PACS) (at 100 and 160um), with an additional wider
+    component of 270deg^2^ with SPIRE alone. These bands cover the peak of
+    the redshifted thermal spectral energy distribution from interstellar
+    dust and thus capture the reprocessed optical and ultraviolet
+    radiation from star formation that has been absorbed by dust, and are
+    critical for forming a complete multiwavelength understanding of
+    galaxy formation and evolution.
+
+Description:
+    The observations described here have been taken as part of the
+    Herschel Multi-tiered Extragalactic Survey (HerMES; Oliver et al.,
+    2012MNRAS.424.1614O) under the programme KPGT_soliver 1 whose main
+    objective was to chart the formation and evolution of infrared
+    galaxies throughout cosmic history, measuring the bolometric emission
+    of infrared galaxies and their clustering properties. The catalogues
+    extracted from these maps include over 1,200,000 entries representing
+    over 340,000 galaxies.
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName           Lrecl  Records   Explanations
+--------------------------------------------------------------------------------
+ReadMe                 80        .   This file
+hermes_xmm.dat.gz     330    44120   Subset of merged catalog
+merge.dat             330   340968   Merged catalog
+sx250.dat             256   288754   SUSSEXtractor 250um catalog
+sx350.dat             256   177487   SUSSEXtractor 350um catalog
+sx500.dat             256    79860   SUSSEXtractor 500um catalog
+sf250.dat             177   340968   Starfinder 250um catalogue
+sf350.dat             177   240936   Starfinder 350um catalogue
+sf500.dat             177    84013   Starfinder 500um catalogue
+img.dat               156       57   Summary of the FITS images
+img/*                   .       57   FITS images of all the fields
+fits/*                  .      239   FITS catalogs of all the fields
+xml/*                   .      203   VOTable Catalogs of all the fields
+--------------------------------------------------------------------------------
+
+See also:
+   http://hedam.lam.fr/HerMES/ : HerMES Home Page
+
+Byte-by-byte Description of file: merge.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label     Explanations
+--------------------------------------------------------------------------------
+   1- 22  A22   ---     Field     Field designation
+  24- 40  A17   ---     ---       [2HERMES S250 SF D]
+  42- 57  A16   ---     2HERMES   HerMES ID, JHHMMSS.s+DDMMSS (G1)
+  61- 69  F9.5  deg     RAdeg     Right Ascension (J2000)
+  71- 79  F9.5  deg     DEdeg     Declination (J2000)
+  81- 96 E16.11 mJy     F250      Herschel/SPIRE flux density at 250um
+  98-113 E16.11 mJy   e_F250      Instrumental error in flux 250um density
+ 115-130 E16.11 mJy     F350      Herschel/SPIRE flux density at 350um
+ 132-147 E16.11 mJy   e_F350      Instrumental error in flux 350um density
+ 149-164 E16.11 mJy     F500      Herschel/SPIRE flux density at 500um
+ 166-181 E16.11 mJy   e_F500      Instrumental error in flux 500um density
+ 183-198 E16.11 mJy   E_F250      Total error (instrumental + confusion)
+                                   in 250um flux density
+ 200-215 E16.11 ---     chi250    Local reduced {chi}^2^ statistic of 250um
+                                   photometry fit in 11x11 pixel window
+ 217-232 E16.11 mJy   E_F350      Total error (instrumental + confusion)
+                                   in 350um flux density
+ 234-249 E16.11 ---     chi350    Local reduced {chi}^2^ statistic of 350um
+                                   photometry fit in 11x11 pixel window
+ 251-266 E16.11 mJy   E_F500      Total error (instrumental + confusion)
+                                   in 500um flux density
+ 268-283 E16.11 ---     chi500    Local reduced {chi}^2^ statistic of 500um
+                                   photometry fit in 11x11 pixel window
+ 285-290  I6    ---     gID       ID of the segment  where the source is
+ 292-295  I4    ---     Ng        Number of sources in the segment gid
+ 297-304  F8.5  mJy     bg250     Background subtracted from 250um map (G2)
+ 306-313  F8.5  mJy     bg350     Background subtracted from 350um map (G2)
+ 315-322  F8.5  mJy     bg500     Background subtracted from 550um map (G2)
+ 324-330  A7    ---     Com       Comment
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: hermes_xmm.dat.gz
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label     Explanations
+--------------------------------------------------------------------------------
+   1- 22  A22   ---     Field     Field designation
+  24- 40  A17   ---     ---       [2HERMES S250 SF D]
+  42- 57  A16   ---     2HERMES   HerMES ID, JHHMMSS.s+DDMMSS (G1)
+  61- 69  F9.5  deg     RAdeg     Right Ascension (J2000)
+  71- 79  F9.5  deg     DEdeg     Declination (J2000)
+  81- 96 E16.11 mJy     F250      Herschel/SPIRE flux density at 250um
+  98-113 E16.11 mJy   e_F250      Instrumental error in flux 250um density
+ 115-130 E16.11 mJy     F350      Herschel/SPIRE flux density at 350um
+ 132-147 E16.11 mJy   e_F350      Instrumental error in flux 350um density
+ 149-164 E16.11 mJy     F500      Herschel/SPIRE flux density at 500um
+ 166-181 E16.11 mJy   e_F500      Instrumental error in flux 500um density
+ 183-198 E16.11 mJy   E_F250      Total error (instrumental + confusion)
+                                   in 250um flux density
+ 200-215 E16.11 ---     chi250    Local reduced {chi}^2^ statistic of 250um
+                                   photometry fit in 11x11 pixel window
+ 217-232 E16.11 mJy   E_F350      Total error (instrumental + confusion)
+                                   in 350um flux density
+ 234-249 E16.11 ---     chi350    Local reduced {chi}^2^ statistic of 350um
+                                   photometry fit in 11x11 pixel window
+ 251-266 E16.11 mJy   E_F500      Total error (instrumental + confusion)
+                                   in 500um flux density
+ 268-283 E16.11 ---     chi500    Local reduced {chi}^2^ statistic of 500um
+                                   photometry fit in 11x11 pixel window
+ 285-290  I6    ---     gID       ID of the segment  where the source is
+ 292-295  I4    ---     Ng        Number of sources in the segment gid
+ 297-304  F8.5  mJy     bg250     Background subtracted from 250um map (G2)
+ 306-313  F8.5  mJy     bg350     Background subtracted from 350um map (G2)
+ 315-322  F8.5  mJy     bg500     Background subtracted from 550um map (G2)
+ 324-330  A7    ---     Com       Comment
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: sf???.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label     Explanations
+--------------------------------------------------------------------------------
+   1- 22  A22   ---     Field     Field designation
+  24- 32  A9    ---     ---       [2HERMES S]
+  33- 35  I3    um      lam       Herschel filter (250, 300 or 500)
+  37- 40  A4    ---     ---       [SF D]
+  42- 57  A16   ---     2HERMES   HerMES ID, JHHMMSS.s+DDMMSS (G1)
+  61- 69  F9.5  deg     RAdeg     Right ascension (J2000)
+  71- 79  F9.5  deg     DEdeg     Declination (J2000)
+  81- 96 E16.11 mJy     Flux      Source flux density
+  98-113 E16.11 mJy   e_Flux      Source flux density formal uncertainty
+                                   (instrumental noise)
+ 115-130 E16.11 mJy   E_Flux      Total uncertainty in the source flux density,
+                                   due to confusion and instrumental noise
+ 132-147 E16.11 ---     chi2      Local reduced {chi}^2^ statistic of photometry
+                                   fit in 11x11 pixel window
+ 149-154  I6    ---     gID       ID of the segment  where the source is
+ 156-159  I4    ---     Ng        Number of sources in the segment gid
+ 161-169  F9.6  mJy     bg        Background subtracted from map in observed
+                                   band (mJy/beam) (G2)
+ 171-177  A7    ---     Com       Comments
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: sx???.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label     Explanations
+--------------------------------------------------------------------------------
+   1- 22  A22   ---     Field   Field designation
+  24- 32  A9    ---     ---     [2HERMES S]
+  33- 35  I3    um      lam     Herschel filter (250, 300 or 500)
+  37- 40  A4    ---     ---     [SX D]
+  42- 59  A18   ---     2HERMES HerMES ID, SX JHHMMSS.s+DDMMSS (G1)
+                                 or SNNN SX JHHMMSS.s+DDMMSSs
+                                 or SNNN SX JHHMMSS.s+DDMMSSss
+  61- 69  F9.5  deg     RAdeg   Right ascension (J2000)
+  71- 79  F9.5  deg     DEdeg   Declination (J2000)
+  81- 90  F10.5 mJy     Flux    Source flux density
+  92-100  F9.5  mJy   e_Flux    Source flux density formal uncertainty
+                                  (instrumental noise)
+ 102-113  F12.5 ---     S/N     Signal to instrumental noise: Flux/e_Flux
+ 115-123  F9.5  deg   e_RAdeg   Right ascension uncertainty
+ 125-133  F9.5  deg   e_DEdeg   Declination uncertainty
+ 135-143  F9.5  mJy   E_Flux    ?=-99.99999 Total uncertainty in the source flux
+                                density, due to confusion and instrumental noise
+ 145-154  F10.5 ---     SNR     ?=-99.999 Signal to total noise: Flux/E_Flux
+ 156-177 E22.15 mJy     F1      ?=1E+20 Source flux density, as measured using
+                                 a map based on the first half of the data
+ 178-200 E23.15 ---     SN1     ?=1E+20 Signal to instrumental noise, as
+                                 measured using a map based on the first half
+                                 of the data
+ 202-223 E22.15 mJy     F2      ?=1E+20 Source flux density, as measured using
+                                 a map based on the second half of the data
+ 224-246 E23.15 ---     SN2     ?=1E+20 Signal to instrumental noise, as
+                                 measured using a map based on the second half
+                                 of the data
+     248  A1    ---     fc      [1T] source lies within a well-defined central
+                                    region of the map
+ 250-256  A7    ---     Com     Comment
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: img.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units     Label     Explanations
+--------------------------------------------------------------------------------
+   1- 17  A17   ---       Field     Field designation
+  19- 27  F9.5  deg       RAdeg     Right Ascension of center (J2000)
+  28- 36  F9.5  deg       DEdeg     Declination of center (J2000)
+  38- 42  F5.2 arcsec/pix Scale     Scale of the image
+  44- 47  I4    pix       Nx        Number of pixels along X-axis
+      48  A1    ---       ---       [x]
+  49- 52  I4    pix       Ny        Number of pixels along Y-axis
+  54- 56  I3    um        lam       Wavelength (250, 350 or 500)
+  58-108  A51   ---       FileName  Name of FITS file in subdirectory img
+ 109-156  A48   ---       Title     Title and comments
+--------------------------------------------------------------------------------
+
+Global Notes:
+
+Note (G1): HerMes identifiers are <2HERMES SNNN AA D JHHMMSS.s+DDMMSS>, where:
+  * NNN is the Herschel filter (250, 350 or 500)
+  * AA  is "SF" for StarFinder, "SX" for SUSSEXtractor,
+       and "SP" for the merged catalog.
+  * D is identify a source found on a deep map where a shallow map
+        is also available (nested fields, L1-ECDFS, L3-Groth-Strip,
+        L3-Lockman-East-ROSAT, L4-UDS and L4-VVDS) nothing otherwise
+  * JHHMMSS.s+DDMMSS is the truncated J2000 position (of the 250um source
+     for the merged catalogues)
+
+Note (G2): Background subtracted 250, 350, 500um maps (mJy/beam)
+  ------------------------------------------------------
+  Region               250um     350um      500um
+  ------------------------------------------------------
+  Abell 1689         -2.992838  -3.882051  -3.625063
+  Abell 2218         -3.842219  -4.793899  -4.427385
+  MS0451.6-0305      -2.457927  -3.325856  -3.349244
+  MS1054.4-0321      -2.403948  -3.384200  -2.526010
+  RXJ0152.7-1357     -2.445642  -3.672360  -2.905817
+  Abell 1835         -2.677190  -3.444009  -3.016452
+  Abell 2219         -2.784788  -3.446285  -2.944812
+  Abell 2390         -4.198272  -5.410602  -4.847107
+  Abell 370          -2.938358  -4.290618  -3.703924
+  Cl0024+16          -2.588148  -3.307764  -3.010474
+  MS1358+62          -2.803877  -3.713894  -3.445110
+  RXJ13475-1145      -2.434233  -2.887766  -2.353963
+  ECDFS              -2.376153  -3.441775  -2.813922
+  COSMOS             -2.773473  -3.747690  -3.279235
+  GOODS North        -2.923722  -3.938112  -3.322251
+  Groth Strip        -1.846280  -2.700535  -2.210331
+  Lockman East ROSAT -1.676664  -2.450527  -1.828034
+  Lockman North      -1.676664  -2.450527  -1.828034
+  UDS                -1.708485  -2.431207  -1.884272
+  VVDS               -1.708485  -2.431207  -1.884272
+  Bootes HerMES      -2.004325  -2.853428  -2.256987
+  CDFS SWIRE         -2.416153  -3.490635  -2.861303
+  EGS HerMES         -1.679596  -2.511203  -1.923709
+  ELAIS N1 HerMES    -2.207341  -3.083944  -2.378375
+  Lockman SWIRE      -1.703802  -2.441558  -1.854351
+  ADFS               -1.492433  -2.054412  -1.406900
+  ELAIS S1 SWIRE     -1.429953  -2.091187  -1.447209
+  FLS                -1.590289  -2.309712  -1.607886
+  XMM LSS SWIRE      -1.454805  -2.113369  -1.461253
+  ------------------------------------------------------
+-----------------------------------------------------------------
+
+History:
+    Copied at http://hedam.lam.fr/HerMES/
+
+================================================================================
+(End)                                      Patricia Vannier [CDS]    19-Feb-2014
