@@ -1,0 +1,6 @@
+seaborn
+glueviz
+astroquery
+aplpy
+photutils
+ginga
