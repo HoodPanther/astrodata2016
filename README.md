@@ -1,6 +1,12 @@
 # astrodata2016
 Notebook for Astropy class at IPAC held in April 2016.
 
+Click on the .ipynb link below for a rendered version.
+
+## Launching an interactive instance
+
+[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/stargaser/astrodata2016)
+
 ## Installation of Python modules
 If you don't have Anaconda or Miniconda, go to http://conda.pydata.org/miniconda.html and install the Python 3.5 64-bit version for your system. 
 
