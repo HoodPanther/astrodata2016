@@ -12,7 +12,7 @@ If you don't have Anaconda or Miniconda, go to http://conda.pydata.org/miniconda
 
 Make sure you've added the `bin` directory for Miniconda to your `PATH`. Then in a terminal window, execute this command:
 ```
-conda create -n course python=3.5 astropy pandas seaborn glueviz jupyter pillow
+conda create -n course python=3.5 astropy pandas seaborn glueviz jupyter pillow statsmodels
 ```
 This creates a virtual environment named `course`. You can list your environments with `conda info -e`.
 
