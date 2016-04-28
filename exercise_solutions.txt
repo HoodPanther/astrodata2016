@@ -1,0 +1,23 @@
+#Exercise 1
+pandas_photz['mag3.6'] = -2.5*np.log10(pandas_photz['s36']*u.uJy/(280.9*u.Jy))
+pandas_photz['mag4.5'] = -2.5*np.log10(pandas_photz['s45']*u.uJy/(179.7*u.Jy))
+pandas_photz['mag5.8'] = -2.5*np.log10(pandas_photz['s58']*u.uJy/(115.0*u.Jy))
+pandas_photz['mag8.0'] = -2.5*np.log10(pandas_photz['s8']*u.uJy/(64.1*u.Jy))
+pandas_photz['color12'] = pandas_photz['mag3.6'] - pandas_photz['mag4.5']
+pandas_photz['color34'] = pandas_photz['mag5.8'] - pandas_photz['mag8.0']
+sns.jointplot(x='color34', y='color12', data=pandas_photz)
+
+g = sns.FacetGrid(pandas_photz, col="j2", col_wrap=6)
+g.map(plt.scatter, 'color34', 'color12')
+
+# Exercise 2
+
+fig = aplpy.FITSFigure('data/xmm-lss-cutout-350um.fits')
+fig.show_grayscale()
+fig.recenter(35.15, -5.5, radius=0.5)
+ix1 = joinedtbl['pred350'] > 50*u.mJy
+ix2 = joinedtbl['F350'] > 50*u.mJy
+fig.show_circles(joinedtbl['ra'][ix1], joinedtbl['dec'][ix1], radius = 30/3600., edgecolor='y', linewidth=1)
+fig.show_circles(joinedtbl['ra'][ix2], joinedtbl['dec'][ix2], radius = 50/3600., edgecolor='b', linewidth=1)
+
+
